@@ -1,0 +1,136 @@
+// The unbranded stylesheet is used if you need to create pages in your
+// prototype without the GOV.UK branding.
+//
+// See localhost:3000/docs/templates/blank-unbranded
+
+// Import settings first so we can override them before importing all of GOV.UK Frontend
+// If you need to enable compatibility mode or the legacy palette, do that *before* this import.
+@import "node_modules/govuk-frontend/govuk/settings/all";
+
+// Override the default GOV.UK Frontend font stack
+$govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+// Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
+$govuk-canvas-background-colour: $govuk-body-background-colour;
+
+@import "application";
+
+body, html {padding:0;margin:0;
+height:100%;}
+.govuk-header__container{
+  border-bottom:0px;
+
+
+}
+.header-global {
+  background:black;
+  color:white;
+  font-family:Arial;
+  padding:24px;
+}
+.internal-banner {
+	background: #f8f8f8;
+  padding:4px 0;
+	border-bottom: 1px solid #ddd;
+	.bread {
+		li {
+			display: inline-block;
+			font-size: 15px;
+			color: #71767C;
+			&:before {
+				content: "/";
+				padding: 10px;
+				color: #ccc;
+			}
+			&:first-child {
+				&:before {
+					content: "";
+					padding: 0;
+				}
+			}
+			a {
+				color: #005ea5;
+			}
+		}
+	}
+	h1 {
+		margin: 12px 0 0 0;
+		padding: 0;
+	}
+}
+.internal-wrapper {
+  width:100%;
+  background-color: white;
+
+}
+td.absence {background-color:#efefee;}
+.application-summary{
+  margin:0 0 24px 0;
+  height:160px;
+  display:block;
+  border-bottom:1px solid #ddd
+}
+.application-details, .work-history{
+  margin-bottom:24px;
+}
+.govuk-heading-l {margin-bottom:4px}
+.no-column{
+  padding:24px;
+}
+
+.column-left {
+  float: left;
+  width: 15%;
+  padding:16px;
+
+}
+
+.column-main {
+  float: right;
+  padding:16px;
+  width: 80%;
+}
+.column-main-left {
+  	padding: 1% ;
+  float: left;
+  position:relative;
+  width: 78%;
+
+  display:block;
+  height:30px
+
+}
+.column-right {
+  float: right;
+  width: 18%;
+  padding:1%;
+  margin:0;
+  background:#efefee;
+  text-align:left;
+  height:100vh;
+
+}
+.column-right2 {
+  float: right;
+  width: 44%;
+  padding:0 1%;
+  margin-top:0;
+  text-align:left;
+}
+
+.govuk-table__cell{
+  padding:16px 4px
+}
+
+.history-block{
+  background-color:#ffffff;
+  width:90%;
+ text-align:left;
+ padding:16px;
+
+  margin:16px auto;
+
+}
+.govuk-textarea{
+  text-align:left
+}
