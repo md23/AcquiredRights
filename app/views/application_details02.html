@@ -11,7 +11,9 @@
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
- <li><a href="#">Home</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="application_details.html">GHI1234567</a></li>
+
 </ul>
 </div>
 
@@ -19,9 +21,10 @@
 
 <div class="column-main-left">
   <div class="application-summary">
-    <h3 class="govuk-fieldset__heading govuk-caption-l">Ian Reid</h3>
-      <h1 class="govuk-heading-l">ABCDE123456</h1>
-              <strong class="govuk-tag govuk-tag--yellow">Under Consideration</strong>&nbsp;<span><p>Assigned to me</p></span>
+    <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
+      GHI1234567</h1>
+              <strong class="govuk-tag govuk-tag--yellow">Under Consideration</strong>
+                <p class="assigned">Assigned to me</p>
 
   </div>
   <div class="application-details">
@@ -53,11 +56,11 @@
   </table>
   <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Work history</caption>
-       <thead class="govuk-table__head">
-      <tr class="">
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Job</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Company</th>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header app-custom-class">Period</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Job</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Company</th>
       </tr>
     </thead>
     <tbody class="govuk-table__body">
@@ -111,7 +114,7 @@
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
           <label class="govuk-label govuk-radios__label" for="contact">
-            Accept application
+            Approve application
           </label>
         </div>
         <div class="govuk-radios__item">
@@ -146,7 +149,9 @@
   <div class="column-right">
     <table class="govuk-table">
         <div class="govuk-form-group">
-          <h2 class="govuk-heading-m">Notes</h3>
+          <h3 class="govuk-heading-m">Application history</h3>
+
+          <h4 class="govuk-heading-s">Add a Note</h4>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Not enough details provided</textarea>
                     <a href="application_details03.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
                 Save
@@ -159,7 +164,7 @@
         </div>
 
         <div class="history-block">
-        <p>  07/07/2021 <br>
+        <p class="govuk-body-s">  07/07/2021 <br>
           Application was submitted
           </p>
         </div>

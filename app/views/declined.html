@@ -11,7 +11,9 @@
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
- <li><a href="#">Home</a></li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="application_details.html">GHI1234567</a></li>
+
 </ul>
 </div>
 
@@ -19,14 +21,14 @@
 
   <div class="column-main-left">
 
-      <div class="application-summary">
+      <div class="application-summary float">
           <div class="column-main-left">
             <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
-              <h1 class="govuk-heading-m">ABCDE123456</h1>
+              GHI1234567</h1>
                   <strong class="govuk-tag govuk-tag--red">Declined</strong>
+                    <p class="assigned">Assigned to me</p>
           </div>
           <div class="column-right2">
-
             <div class="govuk-warning-text">
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
@@ -69,11 +71,11 @@
   </table>
   <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Work history</caption>
-       <thead class="govuk-table__head">
-      <tr class="">
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Job</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Company</th>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header app-custom-class">Period</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Job</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Company</th>
       </tr>
     </thead>
     <tbody class="govuk-table__body">
@@ -123,17 +125,22 @@
     <table class="govuk-table">
 
         <div class="history-block">
-        <p class="govuk-caption-s">  07/07/2021 by Lauren Hall</p>
-        <p>  The application was approved
+        <p class="govuk-body-s">  07/07/2021 at 10:00 by Lauren Hall</p>
+        <p> <strong>Outcome:</strong> The application was declined.
           </p>
+          <p> <strong>Reason:</strong> Unexplained history breaks
+            </p>
+            <p> <strong>Notice to candidate:</strong>
+              There were too many unexplained history breaks in your application.
+              </p>
         </div>
         <div class="history-block">
-        <p class="govuk-caption-s">  07/07/2021 by Lauren Hall</p>
+        <p class="govuk-body-s">  07/07/2021 by Lauren Hall</p>
         <p>  All good
           </p>
         </div>
         <div class="history-block">
-        <p class="govuk-caption-xs">  07/07/2021 </p>
+        <p class="govuk-body-s">  07/07/2021 </p>
         <p>   Application was submitted</p>
           </p>
         </div>
