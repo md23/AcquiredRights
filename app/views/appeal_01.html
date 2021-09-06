@@ -1,9 +1,7 @@
-{% extends "layout.html" %}
+{% extends "layout_appeal.html" %}
 {% block pageTitle %}
   Question page
 {% endblock %}
-
-
 
 {% block content %}
 <div class="internal-banner">
@@ -15,13 +13,12 @@
 </div>
 
 <div class="internal-wrapper">
-
 <div class="column-main-left">
   <div class="application-summary">
     <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
       GHI1234567</h1>
-              <strong class="govuk-tag govuk-tag--yellow">Under Consideration</strong>
-                <p class="assigned">Assigned to me</p>
+              <strong class="govuk-tag govuk-tag--purple">Under Appeal</strong>&nbsp;<span>
+                <p class="assigned">Assigned to me (authorised appeal user)</p></span>
 
   </div>
   <div class="application-details">
@@ -100,6 +97,7 @@
   </table>
   </div>
 
+
   <form id="data-form" action="/decision" method="post" novalidate>
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -144,37 +142,56 @@ Enter text here</textarea>
 
     </fieldset>
     <p><button class="govuk-button" data-module="govuk-button">
-    Submit
+      Submit
     </button>
     </p>
+    <p>
+      OR
+      </p>
+
+      <p><a href="home_appeal.html" class="govuk-link">Go back to homepage</a></p>
+
+
   </div>
   </form>
-
-  </div>
 </div>
+
   <div class="column-right">
+    <h3 class="govuk-heading-m">Application history</h3>
+    <div class="govuk-form-group">
+
+        <a href="appeal_note01.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+    Add a note
+        </a>
+
+
+    </div>
     <table class="govuk-table">
-        <div class="govuk-form-group">
-          <h3 class="govuk-heading-m">Application history</h3>
-               <a href="application_details02.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-        Add a note
-            </a>
-
-
-        </div>
 
         <div class="history-block">
-        <p class="govuk-body-s">  07/07/2021 by Lauren Hall</p>
-        <p>  Not enough details provided
+        <p class="govuk-body-s">  01/09/2021 by Authorised Appeal user</p>
+        <p>  The application was put under appeal
           </p>
         </div>
         <div class="history-block">
-        <p class="govuk-body-s">  07/07/2021 </p>
-        <p>   Application was submitted</p>
+        <p class="govuk-body-s">  07/07/2021 at 10:00 by Lauren Hall</p>
+        <p> <strong>Outcome:</strong> The application was declined.
           </p>
+          <p> <strong>Reason:</strong> Unexplained history breaks
+            </p>
+            <p> <strong>Notice to candidate:</strong>
+              There were too many unexplained history breaks in your application.
+              </p>
         </div>
 
-    </table>
+          <div class="history-block">
+          <p class="govuk-body-s">  07/07/2021 </p>
+          <p>   Application was submitted</p>
+            </p>
+          </div>
+
+      </table>
+
 
 </div>
 

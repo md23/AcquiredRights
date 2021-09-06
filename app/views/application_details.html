@@ -1,12 +1,9 @@
-{% extends "layout_custom.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   Question page
 {% endblock %}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
-{% endblock %}
 
 {% block content %}
 <div class="internal-banner">
@@ -20,13 +17,14 @@
 
 <div class="column-main-left">
     <div class="application-summary float">
-            <div class="column-main-left">
+            <div class="column-main-left2">
                 <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
             GHI1234567</h1>
                 <strong class="govuk-tag govuk-tag--blue">New</strong>
                 <p></p>
-              </div>
-              <div class =" column-right2">
+            </div>
+
+            <div class =" column-right2">
                 <div class="govuk-warning-text message">
                       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
                       <strong class="govuk-warning-text__text">
@@ -34,8 +32,8 @@
                           Select “Assign to me” below  to start the application review
                       </strong>
                 </div>
-                <div class="clearfix"></div>
-                </div>
+            <div class="clearfix"></div>
+   </div>
 
 
    </div>
@@ -80,54 +78,45 @@
     </thead>
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell"><strong>Apr 2019  to Sept 2019</td>
-        <td class="govuk-table__cell"><strong>Courier Delivery Driver</strong></td>
+        <td class="govuk-table__cell"> Apr 2019  to Sept 2021</td>
+        <td class="govuk-table__cell"><strong>Delivery Hub Logistics Administrator</strong><br>Current role</td>
         <td class="govuk-table__cell"><strong>DHL</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
       </tr>
       <tr class="govuk-table__row ">
-          <td class="govuk-table__cell absence"><strong>Jan 2017 to March 2019</strong></td>
+          <td class="govuk-table__cell absence"> Jan 2017 to March 2019 </td>
         <td class="govuk-table__cell absence"><strong>Break in work history</strong><br> Parental leave</td>
         <td class="govuk-table__cell absence"><strong> </strong><br></td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><strong>Apr 2012 to Dec 2016</strong></td>
-        <td class="govuk-table__cell"><strong>Courier Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>Tesco</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
+          <td class="govuk-table__cell"> Apr 2012 to Dec 2016 </td>
+        <td class="govuk-table__cell"><strong>Delivery Team Leader</strong></td>
+        <td class="govuk-table__cell"><strong>Tesco</strong><br> Hornchurch Rd, <br>  Hornchurch RM12 4TE, United Kingdom</td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><strong>Apr 2012 to Dec 2016</strong></td>
-        <td class="govuk-table__cell"><strong>Courier Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>DHL</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
+          <td class="govuk-table__cell"> March 2013 to Apr 2012 </td>
+        <td class="govuk-table__cell"><strong>Delivery Driver</strong></td>
+        <td class="govuk-table__cell"><strong>Flow Logistic</strong><br> 14, Derby Road<br> Leicester</td>
       </tr>
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell"><strong>Jan 2012 to March 2013</strong></td>
-        <td class="govuk-table__cell"><strong>Courier Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>DHL</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
+        <td class="govuk-table__cell"> Jan 2012 to March 2013 </td>
+        <td class="govuk-table__cell"><strong>NHS care Home same Day Courier</strong></td>
+        <td class="govuk-table__cell"><strong>Rico Logistics Ltd</strong><br> Office 1, The Barn, Bridge Farm, Holt Ln, <br> Lutterworth LE17 5NJ, United Kingdom</td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell absence"><strong>Jan 2011 to March 2012</strong></td>
+          <td class="govuk-table__cell absence"> Jan 2011 to March 2012 </td>
           <td class="govuk-table__cell absence"><strong>Break in work history</strong><br> I was unemployed due to personal circumstances</td>
           <td class="govuk-table__cell absence"><strong> </strong><br></td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><strong>Jan 2010 to March 2011</strong></td>
-        <td class="govuk-table__cell"><strong>Courier Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>DHL</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
+          <td class="govuk-table__cell"> Jan 2010 to March 2011 </td>
+        <td class="govuk-table__cell"><strong>Customer Service Delivery Driver</strong></td>
+        <td class="govuk-table__cell"><strong>JCB Logistics Limited</strong><br>
+      CH5 2R,   Deeside </td>
       </tr>
       </tbody>
   </table>
 
-<p>
-  <a href="application_details01.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-Assign to me
-  </a>
-  </p>
-  <br>
-  <p>OR</p></BR>
 
-  <a href="home.html" class="govuk-link">Go back to homepage</a>
-
-  </BR></BR>  </BR></BR>  </BR></BR>  </BR></BR>
 </div>
 </div>
   <div class="column-right">
@@ -144,5 +133,17 @@ Assign to me
     </table>
 
 </div>
+<div class="clearfix">
+  <div class="outcome">
+<p>
+  <a href="application_details01.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Assign to me
+  </a>
+  </p>
 
+  <p>OR</p>
+  <p><a href="home.html" class="govuk-link">Go back to homepage</a></p>
+
+
+  </div>
 {% endblock %}

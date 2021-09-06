@@ -1,4 +1,4 @@
-{% extends "layout_custom.html" %}
+{% extends "layout_appeal.html" %}
 
 {% block pageTitle %}
   Question page
@@ -21,20 +21,21 @@
 
   <div class="column-main-left">
 
-      <div class="application-summary">
-          <div class="column-main-left">
+      <div class="application-summary float">
+          <div class="column-main-left2">
             <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
               GHI1234567</h1>
-                  <strong class="govuk-tag govuk-tag--purple">Under appeal</strong>
+                  <strong class="govuk-tag govuk-tag--red">Declined after appeal</strong>
+                    <p class="assigned">Assigned to me</p>
           </div>
           <div class="column-right2">
-
             <div class="govuk-warning-text">
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
-        <span class="govuk-warning-text__assistive">Warning</span>
-          Select “Assign to me” below  to start the application review
+        This appeal has been declined on 12/08/2021  at 09:00am.
       </strong>
+      <br>
+
     </div>
   </div>
      </div>
@@ -68,11 +69,11 @@
   </table>
   <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Work history</caption>
-       <thead class="govuk-table__head">
-      <tr class="">
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Period</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Job</th>
-        <th scope="col" class="govuk-table__header govuk-!-width-one-third">Company</th>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header app-custom-class">Period</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Job</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Company</th>
       </tr>
     </thead>
     <tbody class="govuk-table__body">
@@ -113,17 +114,6 @@
       </tr>
       </tbody>
   </table>
-
-    <a href="application_details01.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-  Assign to me
-    </a>
-    <br>
-    <p>OR</p></BR>
-
-    <a href="home.html" class="govuk-link">Go back to homepage</a>
-
-    </BR></BR>  </BR></BR>  </BR></BR>  </BR></BR>
-
   </div>
 
 
@@ -132,15 +122,15 @@
   <div class="column-right">
     <table class="govuk-table">
 
-      <div class="history-block">
-      <p class="govuk-body-s">  01/09/2021 by Lauren Hall</p>
-      <p>  The application was put under appeal
-        </p>
-      </div>
-      <div class="history-block">
-        <p class="govuk-body-s">  12/08/2021 by Lauren Hall</p>
-        <p>  The application was declined
+        <div class="history-block">
+        <p class="govuk-body-s">  07/07/2021 at 10:00 by Lauren Hall</p>
+        <p> <strong>Outcome:</strong> The application was declined.
           </p>
+          <p> <strong>Reason:</strong> Unexplained history breaks
+            </p>
+            <p> <strong>Notice to candidate:</strong>
+              There were too many unexplained history breaks in your application.
+              </p>
         </div>
         <div class="history-block">
         <p class="govuk-body-s">  07/07/2021 by Lauren Hall</p>

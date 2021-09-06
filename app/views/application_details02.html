@@ -1,12 +1,9 @@
-{% extends "layout_custom.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+Application details
 {% endblock %}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
-{% endblock %}
 
 {% block content %}
 <div class="internal-banner">
@@ -114,7 +111,7 @@
         <div class="govuk-radios__item">
           <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
           <label class="govuk-label govuk-radios__label" for="contact">
-            Approve application
+            Aprrove application
           </label>
         </div>
         <div class="govuk-radios__item">
@@ -137,6 +134,10 @@
 <option value="reason2">Determined through appeals process</option>
               </select>
             </div>
+            <br>
+            <p>Add feedback for the applicant</p>
+                      <textarea class="govuk-textarea govuk-!-width-one-half" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">
+Unfortunately your application was rejected due to incomplete work history</textarea>
         </div>
       </div>
 
@@ -149,13 +150,11 @@
   <div class="column-right">
     <table class="govuk-table">
         <div class="govuk-form-group">
-          <h3 class="govuk-heading-m">Application history</h3>
-
-          <h4 class="govuk-heading-s">Add a Note</h4>
+          <h2 class="govuk-heading-m">Notes</h3>
                     <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Not enough details provided</textarea>
                     <a href="application_details03.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
                 Save
-                    </a>&nbsp;&nbsp;
+                    </a>&nbsp;&nbsp;&nbsp;
                     <a href="application_details01.html" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
               Cancel
                     </a>
