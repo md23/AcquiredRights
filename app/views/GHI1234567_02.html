@@ -1,38 +1,29 @@
 {% extends "layout.html" %}
+
 {% block pageTitle %}
-  Question page
+Application details
 {% endblock %}
+
 
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
   <li><a href="home.html">Home</a></li>
-  <li><a href="GHI1234567.html">GHI1234567</a></li>
+  <li><a href="GHI1234567_.html">GHI1234567</a></li>
 
 </ul>
 </div>
 
 <div class="internal-wrapper">
 
-  <div class="column-main-left">
+<div class="column-main-left">
+  <div class="application-summary">
+    <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
+      GHI1234567</h1>
+              <strong class="govuk-tag govuk-tag--yellow">Under Consideration</strong>
+                <p class="assigned">Assigned to me</p>
 
-      <div class="application-summary float">
-          <div class="column-main-left2">
-            <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
-              GHI1234567</h1>
-                  <strong class="govuk-tag govuk-tag--green">Approved</strong>
-                    <p class="assigned">Assigned to me</p>
-          </div>
-          <div class="column-right2">
-
-            <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        This application has been approved  on 12/08/2021  at 09:00am
-      </strong>
-    </div>
   </div>
-     </div>
   <div class="application-details">
     <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Applicant's details</caption>
@@ -110,30 +101,74 @@
   </table>
   </div>
 
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+         Decision outcome
+        </h1>
+      </legend>
+      <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+          <label class="govuk-label govuk-radios__label" for="contact">
+            Aprrove application
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+          <label class="govuk-label govuk-radios__label" for="contact-2">
+            Decline application
+          </label>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-phone">
+              Provide a reason
+            </label>
+            <div class="govuk-form-group">
+
+              <select class="govuk-select" id="sort" name="sort">
+                <option value="reason1">Work history contains unexplained gaps</option>
+<option value="reason2">Work History does not include sufficient detail of responsibilities</option>
+<option value="reason2">Work History does not meet the required levels of experience</option>
+<option value="reason2">Determined through appeals process</option>
+              </select>
+            </div>
+            <br>
+            <p>Add feedback for the applicant</p>
+                      <textarea class="govuk-textarea govuk-!-width-one-half" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">
+Unfortunately your application was rejected due to incomplete work history</textarea>
+        </div>
+      </div>
+
+    </fieldset>
+    <p><a href="GHI1234567_02a.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+    Submit
+    </a></p> 
+    <p> OR</p>
+    <p><a href="home.html" class="govuk-link">Go back to homepage</a></p>
 
   </div>
 </div>
   <div class="column-right">
-    <h3 class="govuk-heading-m">Application history</h3>
+    <table class="govuk-table">
+        <div class="govuk-form-group">
+          <h2 class="govuk-heading-m">Notes</h3>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Not enough details provided</textarea>
+                    <a href="GHI1234567_03.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+                Save
+                    </a>&nbsp;&nbsp;&nbsp;
+                    <a href="GHI1234567_01.html" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Cancel
+                    </a>
 
-  <table class="govuk-table">
-
-      <div class="history-block">
-      <p class="govuk-body-s">  07/07/2021 at 10:00 by Lauren Hall</p>
-      <p> <strong>Outcome:</strong> The application was approved.
-        </p>
-
-      </div>
 
         </div>
+
         <div class="history-block">
-        <p class="govuk-body-s">  07/07/2021 by Lauren Hall</p>
-        <p>  Clear and complete work history. No unexplained gaps in work history.
-          </p>
-        </div>
-        <div class="history-block">
-        <p class="govuk-body-s">  07/07/2021 </p>
-        <p>   Application was submitted</p>
+        <p class="govuk-body-s">  07/07/2021 <br>
+          Application was submitted
           </p>
         </div>
 
