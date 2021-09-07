@@ -1,38 +1,43 @@
 {% extends "layout.html" %}
+
 {% block pageTitle %}
   Question page
 {% endblock %}
 
+
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
-  <li><a href="home.html">Home</a></li>
-
-
+ <li><a href="home.html">Home</a></li>
+ <li><a href="GHI1234567.html">HJK1234567</a></li>
 </ul>
 </div>
 
 <div class="internal-wrapper">
 
-  <div class="column-main-left">
+<div class="column-main-left">
+    <div class="application-summary float">
+            <div class="column-main-left2">
+                <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Lula Brock</span>
+            HJK1234567</h1>
+                <strong class="govuk-tag govuk-tag--blue">New</strong>
+                <p></p>
+            </div>
 
-      <div class="application-summary float">
-          <div class="column-main-left2">
-            <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
-              GHI1234567</h1>
-                  <p class="assigned">Assigned to me</p><strong class="govuk-tag govuk-tag--green">Approved</strong>
+            <div class =" column-right2">
+                <div class="govuk-warning-text message">
+                      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                      <strong class="govuk-warning-text__text">
+                        <span class="govuk-warning-text__assistive">Warning</span>
+                          Select “Assign to me” below  to start the application review
+                      </strong>
+                </div>
+            <div class="clearfix"></div>
+   </div>
 
-          </div>
-          <div class="column-right2">
 
-            <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        This application has been approved  on 12/08/2021  at 09:00am
-      </strong>
-    </div>
-  </div>
-     </div>
+   </div>
+
   <div class="application-details">
     <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Applicant's details</caption>
@@ -44,22 +49,24 @@
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell muted">Name: </td>
-        <td class="govuk-table__cell"><b>Ian Reid</b> </td>
+        <td class="govuk-table__cell"><b>Lula Brock</b> </td>
         <td class="govuk-table__cell muted">Date of birth: </td>
-        <td class="govuk-table__cell"><b>28/03/1976</b> </td>
+        <td class="govuk-table__cell"><b>12/02/1985</b> </td>
         <td class="govuk-table__cell muted">Place of birth: </td>
-        <td class="govuk-table__cell"><b>Birmingham</b> </td>
+        <td class="govuk-table__cell"><b>London</b> </td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell muted">Address: </td>
-        <td class="govuk-table__cell"><b>12 Haydn Road</br> NG3 2ED Nottingham, UK</b> </td>
+        <td class="govuk-table__cell"><b>Flat 3 <br> UpHill Estate 24, Bloomsbery close</br> DEZ 34D Derby, UK</b> </td>
         <td class="govuk-table__cell muted">Email address: </td>
-        <td class="govuk-table__cell"><b>reidian@gmail.com</b> </td>
+        <td class="govuk-table__cell"><b>lulabrock@hotmail.com</b> </td>
         <td class="govuk-table__cell muted">Phone number: </td>
-        <td class="govuk-table__cell"><b>07 324324345</b> </td>
+        <td class="govuk-table__cell"><b>0732 123 298</b> </td>
       </tr>
     </tbody>
   </table>
+  </div>
+  <div class="work-history">
   <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Work history</caption>
     <thead class="govuk-table__head">
@@ -72,7 +79,7 @@
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <td class="govuk-table__cell"> Apr 2019  to Sept 2021</td>
-        <td class="govuk-table__cell"><strong>Delivery Hub Logistics Administrator</strong><br>Current role</td>
+        <td class="govuk-table__cell"><strong>Factory worker</strong><br>Current role</td>
         <td class="govuk-table__cell"><strong>DHL</strong><br> 14, Derby Road<br> NG7 3ER Nottingham</td>
       </tr>
       <tr class="govuk-table__row ">
@@ -82,18 +89,18 @@
       </tr>
       <tr class="govuk-table__row">
           <td class="govuk-table__cell"> Apr 2012 to Dec 2016 </td>
-        <td class="govuk-table__cell"><strong>Delivery Team Leader</strong></td>
+        <td class="govuk-table__cell"><strong>Logistic coordinator</strong></td>
         <td class="govuk-table__cell"><strong>Tesco</strong><br> Hornchurch Rd, <br>  Hornchurch RM12 4TE, United Kingdom</td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Mar 2013 to Apr 2012 </td>
-        <td class="govuk-table__cell"><strong>Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>Flow Logistic</strong><br> 14, Derby Road<br> Leicester</td>
+          <td class="govuk-table__cell absence">Mar 2013 to Apr 2012 </td>
+        <td class="govuk-table__cell absence"><strong>Break in work history</strong></br>Parental Leave</td>
+        <td class="govuk-table__cell absence"><strong>Flow Logistic</strong><br> 14, Derby Road<br> Leicester</td>
       </tr>
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell"> Mar 2012 to Mar 2013 </td>
-        <td class="govuk-table__cell"><strong>NHS care Home same Day Courier</strong></td>
-        <td class="govuk-table__cell"><strong>Rico Logistics Ltd</strong><br> Office 1, The Barn, Bridge Farm, Holt Ln, <br> Lutterworth LE17 5NJ, United Kingdom</td>
+        <td class="govuk-table__cell "> Mar 2012 to Mar 2013 </td>
+        <td class="govuk-table__cell"><strong>Customer Service Delivery Driver</strong></td>
+        <td class="govuk-table__cell"><strong>RTF Logistics Limited</strong><br>
       </tr>
       <tr class="govuk-table__row">
           <td class="govuk-table__cell absence"> Jan 2011 to Mar 2012 </td>
@@ -101,44 +108,41 @@
           <td class="govuk-table__cell absence"><strong> </strong><br></td>
       </tr>
       <tr class="govuk-table__row">
-          <td class="govuk-table__cell"> Jan 2010 to Dec 2010 </td>
-        <td class="govuk-table__cell"><strong>Customer Service Delivery Driver</strong></td>
-        <td class="govuk-table__cell"><strong>JCB Logistics Limited</strong><br>
-      CH5 2R,   Deeside </td>
+          <td class="govuk-table__cell absence"> Jan 2010 to Dec 2010 </td>
+          <td class="govuk-table__cell absence"><strong>Break in work history</strong></br> Personal circumstances</td>
+          <td class="govuk-table__cell absence"></td>
       </tr>
       </tbody>
   </table>
-  </div>
 
-
-  </div>
-</div>
-<div class="column-right">
-  <table class="govuk-table">
-      <div class="govuk-form-group">
-        <h3 class="govuk-heading-m">Application history</h3>
-      </div>
-
-      <div class="history-block">
-      <p class="govuk-body-s">  07/07/2021 by Lauren Hall</p>
-      <p> Contacted 3 companies for cross-reference check. All good. Will approve.
-        </p>
-      </div>
-      <div class="history-block">
-      <p class="govuk-body-s">  07/07/2021 </p>
-      <p>   Application was submitted</p>
-        </p>
-      </div>
-
-  </table>
 
 </div>
+</div>
+  <div class="column-right">
+    <table class="govuk-table">
+        <div class="govuk-form-group">
+          <h3 class="govuk-heading-m">Application history</h3>
+          <div class="history-block">
+          <p class="govuk-body-s">  07/07/2021 </p>
+            <p>Application was submitted
+            </p>
+          </div>
+      </div>
 
+    </table>
+
+</div>
 <div class="clearfix">
   <div class="outcome">
-  <p><a href="home2.html" class="govuk-link">Go back to homepage</a></p>
-  </div>
-</div>
-</div>
+<p>
+  <a href="HJK1234567_01.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+Assign to me
+  </a>
+  </p>
 
+  <p>OR</p>
+  <p><a href="home2.html" class="govuk-link">Go back to homepage</a></p>
+
+
+  </div>
 {% endblock %}
