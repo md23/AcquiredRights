@@ -39,6 +39,8 @@ router.post('/confirm', function (req, res) {
 
 
 
+
+
 router.post('/appeal', function (req, res) {
 
   // Make a variable and give it the value from 'how-many-balls'
@@ -51,6 +53,42 @@ router.post('/appeal', function (req, res) {
   } else {
     // Send user to ineligible page
     res.redirect('/a_declined')
+  }
+
+})
+
+// Add your routes here - above the module.exports line
+// Run this code when a form is submitted to 'juggling-balls-answer'
+router.post('/decisionhjk', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['answer']
+
+  // Check whether the variable matches a condition
+  if (answer == "approved"){
+    // Send user to next page
+    res.redirect('/HJK_approved')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/HJK_declined')
+  }
+
+})
+
+router.post('/confirmhjk', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['confirm']
+
+  // Check whether the variable matches a condition
+  if (answer == "approved"){
+    // Send user to next page
+    res.redirect('/HJK_approved')
+  } else if (answer == "declined") {
+    // Send user to ineligible page
+    res.redirect('/HJK_declined')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/HJK1234567_03')
   }
 
 })

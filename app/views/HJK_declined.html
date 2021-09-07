@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+<div class="internal-banner">
+<ul class="bread">
+  <li><a href="home.html">Home</a></li>
+
+
+</ul>
+</div>
+
+<div class="internal-wrapper">
+  <div class="column-main-left">
+      <div class="application-summary">
+            <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Lula Brock</span>
+              HJK1234567</h1>
+
+                    <p class="assigned"> </p>
+          </div>
+  </div>
+     </div>
+<div class="clearfix">
+  <div class="outcome">
+    <p> Proposed outcome:&nbsp;&nbsp;<strong class="govuk-tag govuk-tag--red">Declined</strong></p>
+    <form id="data-form" action="/confirm" method="post" novalidate>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+          Are you sure you want to submit the outcome?
+          </h1>
+        </legend>
+        <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input data-url="approved" class="govuk-radios__input" id="contact" name="confirm" type="radio" value="declined" data-aria-controls="conditional-contact">
+            <label class="govuk-label govuk-radios__label" for="contact">
+              Yes
+            </label>
+        </div>
+        <div class="govuk-radios__item">
+            <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="undefined" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="contact-2">
+            No
+            </label>
+        </div>
+      </div>
+
+      </fieldset>
+      </br> <p><button class="govuk-button" data-module="govuk-button">
+        Submit
+      </button>
+      </p>
+      <p> OR</p>
+      <p><a href="HJK1234567_03.html" class="govuk-link">Go back to application</a></p>
+
+    </div>
+    </form>
+    </div>
+
+</div>
+
+
+{% endblock %}
