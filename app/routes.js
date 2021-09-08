@@ -1,6 +1,25 @@
 const express = require('express')
 const router = express.Router()
 
+router.post('/reassign', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['owner']
+
+  // Check whether the variable matches a condition
+  if (answer == "reassign"){
+    // Send user to next page
+    res.redirect('/CXZ1234567_final')
+  } else if (answer == "declined") {
+    // Send user to ineligible page
+    res.redirect('/CXZ1234567')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/CXZ1234567')
+  }
+
+})
+
 // Add your routes here - above the module.exports line
 // Run this code when a form is submitted to 'juggling-balls-answer'
 router.post('/decision', function (req, res) {
@@ -36,10 +55,6 @@ router.post('/confirm', function (req, res) {
   }
 
 })
-
-
-
-
 
 router.post('/appeal', function (req, res) {
 
@@ -86,11 +101,9 @@ router.post('/confirmhjk', function (req, res) {
     // Send user to ineligible page
     res.redirect('/HJK_declined')
   }
-  else {
-    // Send user to ineligible page
-    res.redirect('/HJK1234567_03')
-  }
+
 
 })
+
 
 module.exports = router
