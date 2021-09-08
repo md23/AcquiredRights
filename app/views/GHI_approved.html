@@ -1,43 +1,30 @@
 {% extends "layout.html" %}
-
 {% block pageTitle %}
   Question page
 {% endblock %}
 
-
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
- <li><a href="home.html">Home</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="home2.html">Applications list</a></li>
+
 
 </ul>
 </div>
 
 <div class="internal-wrapper">
 
-<div class="column-main-left">
-    <div class="application-summary float">
-            <div class="column-main-left2">
-                <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Brett Cross</span>
-          CXZ1234567</h1>
-                <p class="assigned">Assigned to Joe Biggs &nbsp;</p>  <strong class="govuk-tag govuk-tag--yellow">Under Consideration</strong>
+  <div class="column-main-left">
 
-            </div>
+      <div class="application-summary float">
 
-            <div class =" column-right2">
-                <div class="govuk-warning-text message">
-                      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                      <strong class="govuk-warning-text__text">
-                        <span class="govuk-warning-text__assistive">Warning</span>
-                        This application  is being considered  by  Joe Biggs.<br> Select "Reassign to me" if you'd like to take ownership of the application.
-                      </strong>
-                </div>
-            <div class="clearfix"></div>
-   </div>
+            <h1 class="govuk-heading-l"> <span class="govuk-caption-l">Ian Reid</span>
+              GHI1234567</h1>
+                  <p class="assigned">Assigned to me &nbsp;</p><strong class="govuk-tag govuk-tag--green">Approved</strong>
 
 
-   </div>
-
+     </div>
   <div class="application-details">
     <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Applicant's details</caption>
@@ -49,24 +36,22 @@
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell muted">Name: </td>
-        <td class="govuk-table__cell"><b>Brett Cross</b> </td>
+        <td class="govuk-table__cell"><b>Ian Reid</b> </td>
         <td class="govuk-table__cell muted">Date of birth: </td>
-        <td class="govuk-table__cell"><b>28/01/1954</b> </td>
+        <td class="govuk-table__cell"><b>28/03/1976</b> </td>
         <td class="govuk-table__cell muted">Place of birth: </td>
-        <td class="govuk-table__cell"><b>Leeds</b> </td>
+        <td class="govuk-table__cell"><b>Birmingham</b> </td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell muted">Address: </td>
-        <td class="govuk-table__cell"><b>32, Windburn Close</br> DE3 2ED Derby, UK</b> </td>
+        <td class="govuk-table__cell"><b>12 Haydn Road</br> NG3 2ED Nottingham, UK</b> </td>
         <td class="govuk-table__cell muted">Email address: </td>
-        <td class="govuk-table__cell"><b>brett.cross23@gmail.com</b> </td>
+        <td class="govuk-table__cell"><b>reidian@gmail.com</b> </td>
         <td class="govuk-table__cell muted">Phone number: </td>
-        <td class="govuk-table__cell"><b>07436274271</b> </td>
+        <td class="govuk-table__cell"><b>07 324324345</b> </td>
       </tr>
     </tbody>
   </table>
-  </div>
-  <div class="work-history">
   <table class="govuk-table">
     <caption class="govuk-table__caption govuk-table__caption--m">Work history</caption>
     <thead class="govuk-table__head">
@@ -115,35 +100,42 @@
       </tr>
       </tbody>
   </table>
-
-
-</div>
-</div>
-  <div class="column-right">
-    <table class="govuk-table">
-        <div class="govuk-form-group">
-          <h3 class="govuk-heading-m">Application history</h3>
-          <div class="history-block">
-          <p class="govuk-body-s">  07/07/2021 </p>
-            <p>Application was submitted
-            </p>
-          </div>
-      </div>
-
-    </table>
-
-</div>
-<div class="clearfix">
-  <div class="outcome">
-<p>
-  <a href="reassign_confirm.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-Reassign to me
-  </a>
-  </p>
-
-  <p>OR</p>
-  <p><a href="home_reassign.html" class="govuk-link">Go back to homepage</a></p>
+  </div>
 
 
   </div>
+</div>
+<div class="column-right">
+  <table class="govuk-table">
+      <div class="govuk-form-group">
+        <h3 class="govuk-heading-m">Application history</h3>
+      </div>
+      <div class="history-block">
+      <p class="govuk-body-s">  12/08/2021 at 09:00 by Alex Hall</p>
+      <p> <strong>Outcome:</strong> The application was approved.
+        </p>
+
+      </div>
+      <div class="history-block">
+      <p class="govuk-body-s">  07/07/2021 by Alex Hall</p>
+      <p> Contacted 3 companies for cross-reference check. All good. Will approve.
+        </p>
+      </div>
+      <div class="history-block">
+      <p class="govuk-body-s">  07/07/2021 </p>
+      <p>   Application was submitted</p>
+        </p>
+      </div>
+
+  </table>
+
+</div>
+
+<div class="clearfix">
+  <div class="outcome">
+  <p><a href="home2.html" class="govuk-link">Go back to homepage</a></p>
+  </div>
+</div>
+</div>
+
 {% endblock %}

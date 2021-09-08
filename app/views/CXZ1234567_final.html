@@ -8,7 +8,8 @@
 {% block content %}
 <div class="internal-banner">
 <ul class="bread">
- <li><a href="home.html">Home</a></li>
+ <li><a href="index">Home</a></li>
+   <li><a href="home2">Applications list</a></li>
 
 </ul>
 </div>
@@ -25,13 +26,7 @@
             </div>
 
             <div class =" column-right2">
-                <div class="govuk-warning-text message">
-                      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                      <strong class="govuk-warning-text__text">
-                        <span class="govuk-warning-text__assistive">Warning</span>
-                        This application  is being considered  by  Alex Hall.<br> Select "Reassign to me" if you'd like to take ownership of the application.
-                      </strong>
-                </div>
+
             <div class="clearfix"></div>
    </div>
 
@@ -119,31 +114,81 @@
 
 </div>
 </div>
-  <div class="column-right">
-    <table class="govuk-table">
-        <div class="govuk-form-group">
-          <h3 class="govuk-heading-m">Application history</h3>
-          <div class="history-block">
-          <p class="govuk-body-s">  07/07/2021 </p>
-            <p>Application was submitted
-            </p>
-          </div>
+<div class="column-right">
+  <table class="govuk-table">
+      <div class="govuk-form-group">
+        <h3 class="govuk-heading-m">Application history</h3>
+          <a href="GHI1234567_02.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+      Add a note
+          </a>
+
+
       </div>
 
-    </table>
+      <div class="history-block">
+      <p class="govuk-body-s">  07/07/2021 </p>
+        <p>Application was submitted
+        </p>
+      </div>
+
+  </table>
 
 </div>
 <div class="clearfix">
   <div class="outcome">
-<p>
-  <a href="reassigned.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
-Reassign to me
-  </a>
+<form id="data-form" action="/decision" method="post" novalidate>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+       Decision outcome
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input data-url="approved" class="govuk-radios__input" id="contact" name="answer" type="radio" value="approved" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="contact">
+          Approve application
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input data-url="declined" class="govuk-radios__input" id="contact-2" name="answer" type="radio" value="declined" data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-radios__label" for="contact-2">
+          Decline application
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Provide a reason
+          </label>
+          <div class="govuk-form-group">
+            <select class="govuk-select" id="sort" name="sort">
+                <option value="">Select</option>
+                <option value="reason1">Work history contains unexplained gaps</option>
+<option value="reason2">Work History does not include sufficient detail of responsibilities</option>
+<option value="reason3">Work History does not meet the required levels of experience</option>
+<option value="reason4">Determined through appeals process</option>
+            </select>
+          </div>
+          <br>
+          <p>Add feedback for the applicant</p>
+                    <textarea class="govuk-textarea govuk-!-width-one-half" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">
+Enter text here</textarea>
+      </div>
+    </div>
+
+  </fieldset>
+  </br> <p><button class="govuk-button" data-module="govuk-button">
+  Continue
+  </button>
   </p>
+  <p> OR</p>
+  <p><a href="home_reassign2.html" class="govuk-link">Go back to homepage</a></p>
 
-  <p>OR</p>
-  <p><a href="home_reassign.html" class="govuk-link">Go back to homepage</a></p>
+</div>
+</form>
+</div>
+</div>
 
-
-  </div>
 {% endblock %}

@@ -37,21 +37,21 @@ router.post('/decision', function (req, res) {
 
 })
 
-router.post('/confirm', function (req, res) {
+router.post('/hjkconfirm', function (req, res) {
   // Make a variable and give it the value from 'how-many-balls'
-  var answer = req.session.data['confirm']
+  var answer = req.session.data['hjkconfirm']
 
   // Check whether the variable matches a condition
   if (answer == "approved"){
     // Send user to next page
-    res.redirect('/approved')
+    res.redirect('/HJK_declined_final')
   } else if (answer == "declined") {
     // Send user to ineligible page
-    res.redirect('/declined')
+    res.redirect('/HJK1234567_02')
   }
   else {
     // Send user to ineligible page
-    res.redirect('/GHI1234567_03')
+    res.redirect('/HJK1234567_02')
   }
 
 })
@@ -89,6 +89,23 @@ router.post('/decisionhjk', function (req, res) {
 
 })
 
+// Add your routes here - above the module.exports line
+// Run this code when a form is submitted to 'juggling-balls-answer'
+router.post('/decisionNBV', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['answer']
+
+  // Check whether the variable matches a condition
+  if (answer == "approved"){
+    // Send user to next page
+    res.redirect('/NBV_approved')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/NBV_declined')
+  }
+
+})
+
 router.post('/confirmhjk', function (req, res) {
   // Make a variable and give it the value from 'how-many-balls'
   var answer = req.session.data['confirm']
@@ -100,6 +117,21 @@ router.post('/confirmhjk', function (req, res) {
   } else if (answer == "declined") {
     // Send user to ineligible page
     res.redirect('/HJK_declined')
+  }
+
+
+})
+router.post('/confirmNBV', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['confirm']
+
+  // Check whether the variable matches a condition
+  if (answer == "approved"){
+    // Send user to next page
+    res.redirect('/NBV_approved_final')
+  } else if (answer == "declined") {
+    // Send user to ineligible page
+    res.redirect('/NBV_declined_final')
   }
 
 
