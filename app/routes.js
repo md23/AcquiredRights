@@ -153,17 +153,32 @@ router.post('/decisionNBV', function (req, res) {
 })
 
 
-router.post('/confirmNBV', function (req, res) {
+router.post('/confirm_nbv_decline', function (req, res) {
   // Make a variable and give it the value from 'how-many-balls'
   var answer = req.session.data['confirm']
 
   // Check whether the variable matches a condition
-  if (answer == "approved"){
+  if (answer == "yes"){
+    // Send user to next page
+    res.redirect('/NBV_declined_final')
+  } else if (answer == "no") {
+    // Send user to ineligible page
+    res.redirect('/NBV_1234567_04')
+  }
+
+
+})
+router.post('/confirm_nbv_approve', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['confirm']
+
+  // Check whether the variable matches a condition
+  if (answer == "yes"){
     // Send user to next page
     res.redirect('/NBV_approved_final')
-  } else if (answer == "declined") {
+  } else if (answer == "no") {
     // Send user to ineligible page
-    res.redirect('/NBV_declined_final')
+    res.redirect('/NBV_1234567_04')
   }
 
 
