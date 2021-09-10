@@ -183,6 +183,21 @@ router.post('/confirm_nbv_approve', function (req, res) {
 
 
 })
+router.post('/home-filter', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['choice']
+
+  // Check whether the variable matches a condition
+  if (answer == "new"){
+    // Send user to next page
+    res.redirect('/home-filter_new')
+  } else if (answer == "mine") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_mine')
+  }
+
+
+})
 
 
 module.exports = router
