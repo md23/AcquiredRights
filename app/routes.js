@@ -195,9 +195,34 @@ router.post('/home-filter', function (req, res) {
     // Send user to ineligible page
     res.redirect('/home-filter_mine')
   }
+  else if (answer == "uc") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_uc')
+  }
+  else if (answer == "ua") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_ua')
+  }
+  else if (answer == "approved") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_approved')
+  }
+  else if (answer == "declined") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_declined')
+  }
+  else if (answer == "declined_appeal") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_declined_appeal')
+  }
+  else if (answer == "approved_appeal") {
+    // Send user to ineligible page
+    res.redirect('/home-filter_approved_appeal')
+  }
 
 
 })
+
 
 
 module.exports = router
