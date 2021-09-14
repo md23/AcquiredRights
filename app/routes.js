@@ -183,6 +183,21 @@ router.post('/confirm_nbv_approve', function (req, res) {
 
 
 })
+router.post('/confirm_appeal', function (req, res) {
+  // Make a variable and give it the value from 'how-many-balls'
+  var answer = req.session.data['confirm']
+
+  // Check whether the variable matches a condition
+  if (answer == "yes"){
+    // Send user to next page
+    res.redirect('/NBV_1234567_02')
+  } else if (answer == "no") {
+    // Send user to ineligible page
+    res.redirect('/NBV_1234567')
+  }
+
+
+})
 router.post('/home-filter', function (req, res) {
   // Make a variable and give it the value from 'how-many-balls'
   var answer = req.session.data['choice']
