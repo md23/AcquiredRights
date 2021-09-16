@@ -14,7 +14,12 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
 @import "application";
-
+.govuk-button--secondary {
+  background-color:#666
+}
+.govuk-button--secondary, .govuk-button--secondary:link, .govuk-button--secondary:visited, .govuk-button--secondary:active, .govuk-button--secondary:hover{
+  color:#fff
+}
 body, html {padding:0;margin:0;
 height:100%;}
 .govuk-header__container{
