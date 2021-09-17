@@ -122,60 +122,60 @@
   </div>
   <div class="column-left">
       <hr>
+
+
     <div class="govuk-form-group">
             <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                <h3 class="govuk-fieldset__heading">
-                  Filter by status
-                </h3>
+                <h3 class="govuk-fieldset__heading">Filter by status</h3>
               </legend>
-              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input data-url="approved" class="govuk-radios__input" id="contact" name="confirm" type="radio" value="yes" data-aria-controls="conditional-contact">
+                  <label class="govuk-label govuk-radios__label" for="contact">
                     New
                   </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    Under Consideration
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Approved
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Declined
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Under Appeal
-                  </label>
-                </div>
-
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Approved (after appeal)
-                  </label>
-                </div>
-
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Declined (after appeal)
-                  </label>
-                </div>
               </div>
-                </fieldset>
+
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Under Consideration
+                  </label>
+              </div>
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Approved
+                  </label>
+              </div>
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Declined
+                  </label>
+              </div>
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Under Appeal
+                  </label>
+              </div>
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Approved (after appeal)
+                  </label>
+              </div>
+              <div class="govuk-radios__item">
+                  <input data-url="declined" class="govuk-radios__input" id="contact-2" name="confirm" type="radio" value="no" data-aria-controls="conditional-contact-2">
+                  <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Declined (after appeal)
+                  </label>
+              </div>
+            </div>
+            
+            </fieldset>
       </div>
         <hr>
       <div class="govuk-form-group">
