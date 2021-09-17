@@ -1,15 +1,15 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/reassign', function (req, res) {
+router.post('/reassign_confirm', function (req, res) {
   // Make a variable and give it the value from 'how-many-balls'
-  var answer = req.session.data['owner']
+  var answer = req.session.data['reassign']
 
   // Check whether the variable matches a condition
-  if (answer == "reassign"){
+  if (answer == "yes"){
     // Send user to next page
     res.redirect('/CXZ1234567_final')
-  } else if (answer == "declined") {
+  } else if (answer == "no") {
     // Send user to ineligible page
     res.redirect('/CXZ1234567')
   }
