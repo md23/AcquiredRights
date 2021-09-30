@@ -1,0 +1,47 @@
+{% extends "layout_appeal.html" %}
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+<div class="internal-banner">
+<ul class="bread">
+  <li><a href="home.html">Home</a></li>
+
+
+</ul>
+</div>
+
+<div class="internal-wrapper">
+
+
+  <div class="outcome">
+       <form id="data-form" action="/confirm_nbv_approve" method="post" novalidate>
+         <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">Download an extract  </h1>
+          <div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true" >!</span>
+    <strong class="govuk-warning-text__text" style="width:800px">
+      <span class="govuk-warning-text__assistive">Warning</span>
+      A CSV file will be generated with all records. Although identifiable data are removed from the extract to maintain confidentiality, downloading data extracts should be reserved for MI purpose and will be monitored.
+    </strong>
+  </div>
+  </legend>
+ 
+      </fieldset>
+      </br> <p><button class="govuk-button" data-module="govuk-button">
+        Download extract
+      </button>
+      </p>
+      <p> OR</p>
+      <p><a href="home.html" class="govuk-link">Go back to application list</a></p>
+
+    </div>
+    </form>
+    </div>
+
+</div>
+
+
+{% endblock %}
